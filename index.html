@@ -7,11 +7,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description"
 		content="Nina Carducci, une photographe qui vous propose de saisir vos merveilleux moments au travers de son regard, son approche, sa technique en rendant vos moments immortels à chaque fois que vous poserez les yeux sur vos photos." />
-
+	<meta name="theme-color" content="#000000" />
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
 	<link rel="stylesheet" href="./assets/style.min.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<!--<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />-->
 	<link rel="icon" href="./assets/favicon.ico" />
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
@@ -53,40 +54,45 @@
 				</div>
 				<div class="carousel-inner">
 					<picture class="carousel-item active">
-						<source media="(max-width: 767px)" srcset="./assets/images/slider/ryoji-iwata.webp ">
-
+						<source media="(max-width: 768px)" srcset="./assets/images/slider/ryoji-iwata.webp ">
+						<source media="(max-width: 1024px)" srcset="./assets/images/slider/ryoji-iwata.webp ">
+						<source media="(max-width: 1440px)" srcset="./assets/images/slider/ryoji-iwata.webp ">
 						<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt=" man in black"
-							loading="lazy" />
+							loading="lazy" width="1920" height="888" />
+					</picture>
+					<picture class="carousel-item">
+						<source media="(max-width: 768px)" srcset="./assets/images/slider/nicholas-green.webp">
+						<source media="(max-width: 1024px)" srcset="./assets/images/slider/nicholas-green.webp">
+						<source media="(max-width: 1440px)" srcset="./assets/images/slider/nicholas-green.webp">
+						<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100"
+							alt=" man in white shirt" loading="lazy" width="1920" height="888" />
+					</picture>
+					<picture class="carousel-item">
+						<source media="(max-width: 768px)" srcset="./assets/images/slider/edward-cisneros.webp">
+						<source media="(max-width: 1024px)" srcset="./assets/images/slider/edward-cisneros.webp">
+						<source media="(max-width: 1440px)" srcset="./assets/images/slider/edward-cisneros.webp">
+						<img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100"
+							alt="man kissing woman" loading="lazy" width="1920" height="888" />
 					</picture>
 				</div>
-				<div class="carousel-item">
-					<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100"
-						alt=" man in white shirt" loading="lazy" />
-				</div>
-				<div class="carousel-item">
-					<img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100" alt="man kissing woman"
-						loading="lazy" />
-				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-				data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-				data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
-		</div>
 		</div>
 	</header>
 	<main>
 		<article id="about">
-			<div class="picture left">
-				<img src="./assets/images/nina.webp" alt="photo de nina" width="376" height="376" loading="lazy
-			" />
-			</div>
+			<section class="picture left">
+				<img src="./assets/images/nina.webp" alt="photo de nina" width="666" height="664" loading="lazy" />
+			</section>
 			<section id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
 				<p class="about-me__introduction">
@@ -111,32 +117,32 @@
 			<section class="container py-3">
 				<div class="gallery" style="display: none">
 					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/aaron-paul.webp" alt="aaron-paul" width="240" height="320"
+						src="./assets/images/gallery/concerts/aaron-paul.webp" alt="aaron-paul" width="666" height="888"
 						loading="lazy" />
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/ali-morshedlou.webp" alt="Ali Morshedlou" width="240"
-						height="320" loading="lazy" />
+						src="./assets/images/gallery/entreprise/ali-morshedlou.webp" alt="Ali Morshedlou" width="666"
+						height="999" loading="lazy" />
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/jason-goodman.webp" alt="jason-goodman" width="240"
-						height="320" loading="lazy" />
+						src="./assets/images/gallery/entreprise/jason-goodman.webp" alt="jason-goodman" width="666"
+						height="451" loading="lazy" />
 					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/hannah-busing.webp" alt="hannah-busing" width="240"
-						height="320" loading="lazy" />
+						src="./assets/images/gallery/mariage/hannah-busing.webp" alt="hannah-busing" width="666"
+						height="533" loading="lazy" />
 					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/ade-tunj.webp" alt="ade-tunji" width="240" height="320"
+						src="./assets/images/gallery/portraits/ade-tunj.webp" alt="ade-tunji" width="666" height="999"
 						loading="lazy" />
 					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/jakob-owens.webp" alt="jakob-owens" width="240"
-						height="320" loading="lazy" />
+						src="./assets/images/gallery/mariage/jakob-owens.webp" alt="jakob-owens" width="666"
+						height="999" loading="lazy" />
 					<img data-gallery-tag="Portrait" class="gallery-item"
 						src="./assets/images/gallery/portraits/nino-van-prattenburg.webp" alt="nino-van-prattenburg"
-						width="240" height="320" loading="lazy" />
+						width="666" height="1002" loading="lazy" />
 					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/austin-neill.webp" alt="austin-neill" width="240"
-						height="320" loading="lazy" />
+						src="./assets/images/gallery/concerts/austin-neill.webp" alt="austin-neill" width="666"
+						height="444" loading="lazy" />
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/mateus-campos-felipe.webp" alt="mateus-campos-felipe"
-						width="240" height="320" loading="lazy" />
+						width="666" height="408" loading="lazy" />
 				</div>
 			</section>
 			<section class="quote">
