@@ -49,7 +49,9 @@ body {
 	padding-block: 100px;
 	position: relative;
 }
-
+.d-block img{
+object-fit: cover;
+}
 .picture.left::before {
 	content: ' ';
 	background-color: #E5975F;
@@ -69,6 +71,7 @@ body {
 
 .picture img {
 	width: 100%;
+	object-fit: cover;
 
 }
 #about-me {
