@@ -14,16 +14,15 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<!--<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />-->
 	<link rel="icon" href="./assets/favicon.ico" />
-	<link
+	<link rel="stylesheet preload"
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-		rel="stylesheet" />
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+		as="style">
+	<script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<!--header-->
 	<header>
 		<div class="top-header">
 			<h1 class="name">Nina Carducci</h1>
@@ -55,30 +54,37 @@
 				<div class="carousel-inner">
 					<picture class="carousel-item active">
 						<source media="(max-width: 450px)"
-							srcset="./assets/images/slider/edward-cisneroso-small.webp 450w">
-						<source media="(max-width: 767px)"
-							srcset="./assets/images/slider/ryoji-iwatao-small.webp 768w ">
+							srcset="./assets/images/slider/edward-cisneroso-small.webp 450w" sizes="100vw">
+						<source media="(max-width: 767px)" srcset="./assets/images/slider/ryoji-iwatao-small.webp 768w "
+							sizes="100vw">
 						<source media="(max-width: 1024px)"
-							srcset="./assets/images/slider/ryoji-iwatao-meduim.webp 1024w">
-						<source media="(max-width: 1440px)" srcset="./assets/images/slider/ryoji-iwatao.webp">
+							srcset="./assets/images/slider/ryoji-iwatao-meduim.webp 1024w" sizes="100vw">
+						<source media="(max-width: 1440px)" srcset="./assets/images/slider/ryoji-iwatao.webp"
+							sizes="100vw">>
 						<img src="./assets/images/slider/ryoji-iwatao.webp" class="d-block w-100" alt=" man in black"
 							loading="lazy" width="1920" height="888" />
 					</picture>
 					<picture class="carousel-item">
+						<source media="(max-width: 450px)" srcset="./assets/images/slider/nicholas-greeno-small.webp"
+							sizes="100vw">
 						<source media="(max-width: 767px)"
-							srcset="./assets/images/slider/nicholas-greeno-small.webp 768w ">
+							srcset="./assets/images/slider/nicholas-greeno-small.webp 768w " sizes="100vw">>
 						<source media="(max-width: 1024px)"
-							srcset="./assets/images/slider/nicholas-greeno-meduim.webp 1024w ">
-						<source media="(max-width: 1440px)" srcset="./assets/images/slider/nicholas-greeno.webp ">
+							srcset="./assets/images/slider/nicholas-greeno-meduim.webp 1024w " sizes="100vw">>
+						<source media="(max-width: 1440px)" srcset="./assets/images/slider/nicholas-greeno.webp "
+							sizes="100vw">>
 						<img src="./assets/images/slider/nicholas-greeno.webp" class="d-block w-100"
 							alt=" man in white shirt" loading="lazy" width="1920" height="888" />
 					</picture>
 					<picture class="carousel-item">
+						<source media="(max-width: 450px)"
+							srcset="./assets/images/slider/edward-cisneroso-small.webp 450w" sizes="100vw">
 						<source media="(max-width: 767px)"
-							srcset="./assets/images/slider/edward-cisneroso-small.webp 768w">
+							srcset="./assets/images/slider/edward-cisneroso-small.webp 768w" sizes="100vw">>
 						<source media="(max-width: 1024px)"
-							srcset="./assets/images/slider/edward-cisneroso-meduim.webp 1024w">
-						<source media="(max-width: 1440px)" srcset="./assets/images/slider/edward-cisneroso 1920w">
+							srcset="./assets/images/slider/edward-cisneroso-meduim.webp 1024w" sizes="100vw">>
+						<source media="(max-width: 1440px)" srcset="./assets/images/slider/edward-cisneroso 1920w"
+							sizes="100vw">>
 						<img src="./assets/images/slider/edward-cisneroso.webp" class="d-block w-100"
 							alt="man kissing woman" loading="lazy" width="1920" height="888" />
 					</picture>
@@ -99,7 +105,7 @@
 	<main>
 		<article id="about">
 			<section class="picture left">
-				<img src="./assets/images/ninao.webp" alt="photo de nina" loading="lazy" />
+				<img src="./assets/images/ninao.webp" alt="photo de nina" loading="lazy" width="700" height="698" />
 			</section>
 			<section id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -225,7 +231,6 @@
 			</figure>
 		</article>
 	</main>
-	<!--footer-->
 	<footer id="contact">
 		<div class="container">
 			<div class="form-container">
@@ -245,15 +250,13 @@
 				</form>
 			</div>
 			<div class="picture right">
-				<img src="./assets/images/camerao.webp" alt="camera" width="300" height="320" loading="lazy" />
+				<img src="./assets/images/camerao.webp" alt="camera" width="600" height="598" loading="lazy" />
 			</div>
 		</div>
 		</div>
 	</footer>
-	<!--scripts-->
-
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<script defer src="./assets/maugallery.js"></script>
+	<script defer src="./assets/scripts.js"></script>
 </body>
 
 </html>
