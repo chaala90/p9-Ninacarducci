@@ -8,16 +8,15 @@
 	<meta name="description"
 		content="Nina Carducci, une photographe qui vous propose de saisir vos merveilleux moments au travers de son regard, son approche, sa technique en rendant vos moments immortels à chaque fois que vous poserez les yeux sur vos photos." />
 	<meta name="theme-color" content="#000000" />
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap1.css" />
 	<link rel="stylesheet" href="./assets/style.min.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<!--<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />-->
 	<link rel="icon" href="./assets/favicon.ico" />
 	<link rel="stylesheet preload"
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		as="style">
-	<script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	<script defer src="./assets/bootstrap/bootstrap1.bundle.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
@@ -51,42 +50,42 @@
 						aria-label="Slide 3"></button>
 				</div>
 				<div class="carousel-inner">
-					<picture class="carousel-item active">
-						<source media="(max-width: 450px)"
-							srcset="./assets/images/slider/edward-cisneroso-small.webp 450w" sizes="100vw">
-						<source media="(max-width: 767px)" srcset="./assets/images/slider/ryoji-iwatao-small.webp 768w "
-							sizes="100vw">
-						<source media="(max-width: 1024px)"
-							srcset="./assets/images/slider/ryoji-iwatao-meduim.webp 1024w" sizes="100vw">
-						<source media="(max-width: 1440px)" srcset="./assets/images/slider/ryoji-iwatao.webp"
-							sizes="100vw">>
-						<img src="./assets/images/slider/ryoji-iwatao.webp" class="d-block w-100" alt=" man in black"
-							loading="lazy" width="1920" height="888" />
-					</picture>
-					<picture class="carousel-item">
-						<source media="(max-width: 450px)" srcset="./assets/images/slider/nicholas-greeno-small.webp"
-							sizes="100vw">
-						<source media="(max-width: 767px)"
-							srcset="./assets/images/slider/nicholas-greeno-small.webp 768w " sizes="100vw">>
-						<source media="(max-width: 1024px)"
-							srcset="./assets/images/slider/nicholas-greeno-meduim.webp 1024w " sizes="100vw">>
-						<source media="(max-width: 1440px)" srcset="./assets/images/slider/nicholas-greeno.webp "
-							sizes="100vw">>
-						<img src="./assets/images/slider/nicholas-greeno.webp" class="d-block w-100"
-							alt=" man in white shirt" loading="lazy" width="1920" height="888" />
-					</picture>
-					<picture class="carousel-item">
-						<source media="(max-width: 450px)"
-							srcset="./assets/images/slider/edward-cisneroso-small.webp 450w" sizes="100vw">
-						<source media="(max-width: 767px)"
-							srcset="./assets/images/slider/edward-cisneroso-small.webp 768w" sizes="100vw">>
-						<source media="(max-width: 1024px)"
-							srcset="./assets/images/slider/edward-cisneroso-meduim.webp 1024w" sizes="100vw">>
-						<source media="(max-width: 1440px)" srcset="./assets/images/slider/edward-cisneroso 1920w"
-							sizes="100vw">>
-						<img src="./assets/images/slider/edward-cisneroso.webp" class="d-block w-100"
-							alt="man kissing woman" loading="lazy" width="1920" height="888" />
-					</picture>
+					<div class="carousel-item active">
+						<picture>
+							<source media="(max-width: 768px)"
+								srcset="./assets/images/slider/ryoji-iwatao-small.webp 768w " sizes="100vw">
+							<source media="(max-width: 1024px)"
+								srcset="./assets/images/slider/ryoji-iwatao-meduim.webp 1024w" sizes="100vw">
+							<source media="(max-width: 1440px)" srcset="./assets/images/slider/ryoji-iwatao.webp"
+								sizes="100vw">
+							<img src="./assets/images/slider/ryoji-iwatao.webp" class="d-block w-100 img-fluid"
+								alt=" man in black" loading="lazy" width="1920" height="888" />
+						</picture>
+					</div>
+					<div class="carousel-item">
+						<picture>
+							<source media="(max-width: 768px)"
+								srcset="./assets/images/slider/nicholas-greeno-small.webp 768w " sizes="100vw">
+							<source media="(max-width: 1024px)"
+								srcset="./assets/images/slider/nicholas-greeno-meduim.webp 1024w " sizes="100vw">
+							<source media="(max-width: 1440px)" srcset="./assets/images/slider/nicholas-greeno.webp "
+								sizes="100vw">
+							<img src="./assets/images/slider/nicholas-greeno.webp" class="d-block w-100 img-fluid"
+								alt=" man in white shirt" loading="lazy" width="1920" height="888" />
+						</picture>
+					</div>
+					<div class="carousel-item">
+						<picture>
+							<source media="(max-width: 768px)"
+								srcset="./assets/images/slider/edward-cisneroso-small.webp 768w" sizes="100vw">
+							<source media="(max-width: 1024px)"
+								srcset="./assets/images/slider/edward-cisneroso-meduim.webp 1024w" sizes="100vw">
+							<source media="(max-width: 1440px)" srcset="./assets/images/slider/edward-cisneroso 1920w"
+								sizes="100vw">
+							<img src="./assets/images/slider/edward-cisneroso.webp" class="d-block w-100 img-fluid"
+								alt="man kissing woman" loading="lazy" width="1920" height="888" />
+						</picture>
+					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
 					data-bs-slide="prev">
@@ -254,8 +253,8 @@
 		</div>
 		</div>
 	</footer>
-	<script defer src="./assets/maugallery.js"></script>
-	<script defer src="./assets/scripts.js"></script>
+	<script defer src="./assets/maugallery1.js"></script>
+	<script defer src="./assets/scripts.min.js"></script>
 </body>
 
 </html>
