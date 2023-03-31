@@ -211,6 +211,7 @@ body {
 	right: 0;
 	z-index: -1;
 }
+
 .form-container {
 	flex : 2;
 
@@ -334,7 +335,8 @@ input[type="submit"] {
 		text-align: center;
 	}
 	.picture.left::before, .picture.right::before {
-		height: 150px;
+		height: 350px;
+		width: 220px;
 	}
 	#services .container {
 		align-items: center;
