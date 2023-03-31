@@ -335,8 +335,7 @@ input[type="submit"] {
 		text-align: center;
 	}
 	.picture.left::before, .picture.right::before {
-		height: 350px;
-		width: 220px;
+		height: 150px;
 	}
 	#services .container {
 		align-items: center;
