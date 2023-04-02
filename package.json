@@ -1,5 +1,10 @@
 {
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^5.0.0"
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "uglify-js": "^3.17.4"
+  },
+    "scripts": {
+    "minify:js": "uglifyjs ./assets/bootstrap/bootstrap.bundle.js -c -m -o ./assets/bootstrap/bootstrap1.bundle.js",
+    "minifyy:js": "uglifyjs ./assets/maugallery.js -c -m -o ./assets/maugallery1.js"
   }
 }
