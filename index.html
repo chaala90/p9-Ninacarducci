@@ -40,17 +40,21 @@
 		</div>
 		<div id="header">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-						class="active" aria-current="true" aria-label="Slide 1"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-						aria-label="Slide 2"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-						aria-label="Slide 3"></button>
-				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<picture>
+							<source media="(max-width: 650px)"
+								srcset="./assets/images/slider/ryoji-iwatao-xs.webp 650w " sizes="100vw">
 							<source media="(max-width: 768px)"
 								srcset="./assets/images/slider/ryoji-iwatao-small.webp 768w " sizes="100vw">
 							<source media="(max-width: 1024px)"
@@ -63,6 +67,8 @@
 					</div>
 					<div class="carousel-item">
 						<picture>
+							<source media="(max-width: 650px)"
+								srcset="./assets/images/slider/nicholas-greeno-xs.webp 650w " sizes="100vw">
 							<source media="(max-width: 768px)"
 								srcset="./assets/images/slider/nicholas-greeno-small.webp 768w " sizes="100vw">
 							<source media="(max-width: 1024px)"
@@ -75,6 +81,8 @@
 					</div>
 					<div class="carousel-item">
 						<picture>
+							<source media="(max-width: 650px)"
+								srcset="./assets/images/slider/edward-cisneroso-xs.webp 650w " sizes="100vw">
 							<source media="(max-width: 768px)"
 								srcset="./assets/images/slider/edward-cisneroso-small.webp 768w" sizes="100vw">
 							<source media="(max-width: 1024px)"
@@ -86,16 +94,16 @@
 						</picture>
 					</div>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+						class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+						aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+						aria-label="Slide 3"></button>
+				</div>
+
+
 			</div>
 		</div>
 	</header>
@@ -253,7 +261,7 @@
 	</footer>
 	<script defer src="./assets/bootstrap/bootstrap1.bundle.js"></script>
 	<script defer src="./assets/maugallery1.js"></script>
-	<script defer src="./assets/scripts.js"></script>
+	<script defer src="./assets/scripts.min.js"></script>
 </body>
 
 </html>
